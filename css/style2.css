@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838; /* Light grey background */
+}
+
+.test-text {
+    font-size: 20px; /* Adjust font size as needed */
+    color: white; /* Adjust color as needed */
+}

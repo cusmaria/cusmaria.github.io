@@ -1,36 +1,41 @@
-@charset "utf-8";
-
-/*========= レイアウトのためのCSS ===============*/
-
-/* 親要素のスタイル */
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* 画面の高さいっぱいに広がるように */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #383838; /* Light grey background */
 }
 
-/* テキストのスタイル */
-.centered-text {
+.test-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    font-size: 20px; /* Adjust font size as needed */
+    color: white; /* Adjust color as needed */
 }
-  
 
+.content {
+    font-size: 50px;
+    color: #e6e6e6;
+}
 
-/*========= 光りながら出現させるためのCSS ===============*/
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 垂直方向に要素を並べる */
+}
 
-.glowAnime span{opacity: 0;}
-
-/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
-.glowAnime.glow span{ animation:glow_anime_on 1s ease-out forwards; }
-
-@keyframes glow_anime_on{
-  0% { opacity:0; text-shadow: 0 0 0 #fff,0 0 0 #fff;}
-  50% { opacity:1;text-shadow: 0 0 10px #fff,0 0 15px #fff; }
-  100% { opacity:1; text-shadow: 0 0 0 #fff,0 0 0 #fff;}
+.textbox, #submitButton {
+    margin-top: 20px; /* Adjust the spacing between the content and the textbox */
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; /* Adjust the width of the textbox as needed */
+    height: 40px; /* Set the height to match the textbox */
+    border: 2px solid #e4e4e4; /* Border color */
+    border-radius: 5px; /* Border radius */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
