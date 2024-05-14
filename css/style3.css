@@ -19,6 +19,8 @@ body {
     font-size: 15px;
     color: #e6e6e6;
     text-align: center;
+    margin-top: -70px;
+    
 }
 
 .conteiner{
@@ -27,7 +29,7 @@ body {
 
 .home-button {
     margin-top: 20px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     
 }
@@ -41,8 +43,10 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 1s;
+    transition: color 1s;
 }
 
 .home-button a:hover {
-    background-color: #666;
+    background-color: #a1a1a1;
+    color: #252525;
 }
